@@ -1,10 +1,3 @@
-//
-//  GameScreenVC.swift
-//  final-project
-//
-//  Created by DPI Student 030 on 7/20/23.
-//
-
 import UIKit
 
 class GameScreenVC: UIViewController {
@@ -20,7 +13,6 @@ class GameScreenVC: UIViewController {
         
         startTimer()
 
-        // Do any additional setup after loading the view.
     }
     
     
@@ -34,13 +26,9 @@ class GameScreenVC: UIViewController {
     
     @IBOutlet var gameOverButton: UIButton!
     
-    
     @IBOutlet var targetActualButton: UIButton!
     
-    
     var score: Int = 0
-    
-    
     
     var seconds = 30
     var timer = Timer()
@@ -70,7 +58,6 @@ class GameScreenVC: UIViewController {
         targetActualButton.isHidden = true
     }
     
-   // gameOverButton.isHidden = true
     
     @IBAction func targetYay(button: UIButton!) {
         button.isHidden = false
@@ -140,20 +127,5 @@ class GameScreenVC: UIViewController {
         performSegue(withIdentifier: "nextButtonSegue", sender: nil)
     }
     
-    
-
-    
-
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
