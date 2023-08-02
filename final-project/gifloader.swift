@@ -1,10 +1,3 @@
-//
-//  gifloader.swift
-//  final-project
-//
-//  Created by DPI Student 030 on 7/27/23.
-//
-
 import UIKit
 import ImageIO
 // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
